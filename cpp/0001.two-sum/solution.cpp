@@ -1,4 +1,4 @@
-// Created by ZQ at 2024/09/02 20:12
+// Created by ZQ at 2024/09/02 20:14
 // leetgo: 1.4.8
 // https://leetcode.cn/problems/two-sum/
 
@@ -11,7 +11,15 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        
+		for (int i = 0 ; i < nums.size() ; i++)
+		{
+			for (int j = i + 1 ; j < nums.size() ; j++)
+			{
+				if (nums[i] + nums[j] == target)
+					return {i , j};	
+			}
+		}
+		return {0 , 0};
     }
 };
 
