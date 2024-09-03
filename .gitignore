@@ -1,1 +1,47 @@
 .env
+
+
+## for rust
+
+# 忽略编译生成的文件
+target/
+
+# 忽略IDE或编辑器生成的文件
+.vscode/
+.idea/
+*.iml
+
+# 忽略临时文件
+*.swp
+*.swo
+*.swx
+*.bak
+
+# 忽略编译缓存
+Cargo.lock
+
+
+## for golang
+
+# 忽略编译生成的文件
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 忽略依赖管理工具生成的文件
+vendor/
+Gopkg.lock
+Gopkg.toml
+
+# 忽略IDE或编辑器生成的文件
+.vscode/
+.idea/
+*.iml
+
+# 忽略临时文件
+*.swp
+*.swo
+*.swx
+*.bak
